@@ -10,6 +10,7 @@
 #   [*service_name*]      - mariadb service name.
 #   [*config_file*]       - my.cnf configuration file path.
 #   [*socket*]            - mariadb socket.
+#   [*max_connections*]   - mariadb max_connections
 #   [*datadir*]           - path to datadir.
 #   [*ssl]                - enable ssl
 #   [*ssl_ca]             - path to ssl-ca
@@ -43,6 +44,7 @@ class mariadb::config(
   $config_dir        = $mariadb::params::config_dir,
   $config_file       = $mariadb::params::config_file,
   $socket            = $mariadb::params::socket,
+  $max_connections   = $mariadb::params::max_connections,
   $pidfile           = $mariadb::params::pidfile,
   $datadir           = $mariadb::params::datadir,
   $ssl               = $mariadb::params::ssl,

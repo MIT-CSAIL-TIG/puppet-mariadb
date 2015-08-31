@@ -14,6 +14,7 @@ class mariadb::params {
 
   $bind_address        = '127.0.0.1'
   $port                = 3306
+  $max_connections     = 100
   $etc_root_password   = false
   $ssl                 = false
   $restart             = true
